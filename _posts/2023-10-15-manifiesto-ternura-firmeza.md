@@ -2,7 +2,7 @@
 layout: post
 title: Manifiesto de la Ternura
 subtitle: Firmeza
-tags: [Otros]
+tags: [Varios]
 ---
 
 Here, you can write the content for the "Firmeza" section of your project. Add your lines of text.

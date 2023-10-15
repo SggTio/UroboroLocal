@@ -22,3 +22,19 @@ body {
     background-color: #f7f7f7; /* Set a different background color for the sidebar */
 }
 
+/* Site title font */
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+/* Titles and subtitles font */
+h2, h3 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Text font */
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+

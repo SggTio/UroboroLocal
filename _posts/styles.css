@@ -37,4 +37,32 @@ p {
     font-family: "Times New Roman", Times, serif;
 }
 
+/* Style the section navigation bar */
+.section-nav {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0; /* Adjust the padding to your preference */
+}
+
+/* Style the navigation links */
+.section-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-nav li {
+    display: inline;
+    margin-right: 20px; /* Adjust the margin between links */
+}
+
+.section-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif; /* Set the font for links */
+}
+
+.section-nav a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
 

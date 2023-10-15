@@ -2,12 +2,20 @@
 layout: default
 ---
 
-<article>
-  <header>
-    <h2>{{ page.title }}</h2>
-    <h3>{{ page.subtitle }}</h3>
-  </header>
-  <main>
-    {{ content }}
-  </main>
-</article>
+<div class="post-container">
+  <div class="post-main">
+    <article>
+      <header>
+        <h2>{{ page.title }}</h2>
+        <h3>{{ page.subtitle }}</h3>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+    </article>
+  </div>
+  <div class="post-sidebar">
+    <!-- Sidebar content goes here (if you have any) -->
+  </div>
+</div>
+

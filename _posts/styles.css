@@ -1,0 +1,24 @@
+body {
+    background-color: #f2f2f2; /* Greish background color */
+    color: black; /* Black text color */
+}
+
+/* Step 1: Define a container for the columns */
+.post-container {
+    display: flex; /* Use Flexbox to create columns */
+}
+
+/* Step 2: Define the left column (main content) */
+.post-main {
+    flex: 2; /* Take up 2/3 of the container */
+    padding: 20px; /* Add some space around the content */
+    background-color: white; /* Set the background color of the content area */
+}
+
+/* Step 3: Define the right column (optional sidebar) */
+.post-sidebar {
+    flex: 1; /* Take up 1/3 of the container */
+    padding: 20px; /* Add some space around the sidebar */
+    background-color: #f7f7f7; /* Set a different background color for the sidebar */
+}
+

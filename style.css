@@ -69,6 +69,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 /* Style each column in the Latest Stories section */

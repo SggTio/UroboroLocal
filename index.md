@@ -11,7 +11,6 @@ Uróboro Local is a project that compiles and displays top stories from Uróboro
 ## Latest Stories
 
 <div id="latest-stories">
-  <div class="column">
     <div class="story">
       <h3>Story 1: "Innovations in Tech"</h3>
       ![Image 1](image-link-1.jpg)
@@ -22,9 +21,6 @@ Uróboro Local is a project that compiles and displays top stories from Uróboro
       ![Image 2](image-link-2.jpg)
       Artificial Intelligence and Machine Learning are reshaping industries. Discover the latest applications and the impact they have on our daily lives.
     </div>
-  </div>
-
-  <div class="column">
     <div class="story">
       <h3>Story 3: "Cybersecurity Trends"</h3>
       ![Image 3](image-link-3.jpg)
@@ -35,7 +31,6 @@ Uróboro Local is a project that compiles and displays top stories from Uróboro
       ![Image 4](image-link-4.jpg)
       Explore the latest emerging technologies that promise to revolutionize various industries.
     </div>
-  </div>
 </div>
 
 

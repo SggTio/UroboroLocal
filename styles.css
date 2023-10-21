@@ -2,9 +2,6 @@
 /* cspell:disable-file */
 
 /* Remove Webkit printing magic (print all background colors) */
-html, * {
-  -webkit-print-color-adjust: exact;
-}
 
 /* Reset the margin and padding of HTML and body */
 html, body {

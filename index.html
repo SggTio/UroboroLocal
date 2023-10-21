@@ -53,13 +53,13 @@
         <div id="footer"></div>
     <script>
         // Include the additional header
-        fetch('_includes/header.html')
+        fetch('./_includes/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header1').innerHTML = data;
             });
         // Include the footer
-        fetch('_includes/footer.html')
+        fetch('./_includes/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer').innerHTML = data;

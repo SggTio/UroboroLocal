@@ -8,12 +8,16 @@
 </head>
 <body>
     <article class="page mono">
-        <div id="header1"></div>
-            <!-- The header content will be loaded here -->
-        </header>
-        <header>
-            <h1 class="page-title">Uróboro Local</h1>
-            <p class="page-description">Cuentos, escritos y poemas</p>
+            <header>
+                <h1 class="page-title">Uróboro Local</h1>
+                <p class="page-description">Cuentos, escritos y poemas</p>
+              <div class="section-nav">
+                <ul>
+                    <li><a href="#poesia">Poesia</a></li>
+                    <li><a href="#cuentos">Cuentos</a></li>
+                    <li><a href="#varios">Varios</a></li>
+                </ul>
+              </div>
         </header>
         <h1 style="text-align: center;">Uróboro Local</h1>
         <p>Uróboro Local is a project that compiles and displays top stories from Uróboro Local in a newspaper-like format. Stay updated with the latest tech news in a format that's easy to read and enjoy.</p>
@@ -51,19 +55,9 @@
         <p>By Paper-HN Editorial Team</p>
         <p>Paper-HN is your source for quality tech news presented in a newspaper format.</p>
         <div id="footer"></div>
-    <script>
-        // Include the additional header
-        fetch('./_includes/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header1').innerHTML = data;
-            });
-        // Include the footer
-        fetch('./_includes/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
-    </script>
 </body>
+<footer>
+    <p>Cuando la guerra estalle, me paro del lado de los poetas</p>
+    <a href="https://twitter.com/Un_Santajaro">Twitter</a>
+  </footer>
 </html>

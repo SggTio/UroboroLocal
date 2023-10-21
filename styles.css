@@ -1,0 +1,525 @@
+/* Reset some default styles */
+/* cspell:disable-file */
+
+/* Remove Webkit printing magic (print all background colors) */
+html, * {
+  -webkit-print-color-adjust: exact;
+}
+
+/* Reset the margin and padding of HTML and body */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set max width and text color for the body on screens */
+@media only screen {
+  body {
+      margin: 2em auto;
+      max-width: 900px;
+      color: rgb(55, 53, 47);
+  }
+}
+
+/* Set line height and white-space style for the body */
+body {
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* Remove color and underline styling for links */
+a, a.visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Remove color styling for relative link paths */
+.pdf-relative-link-path {
+  font-size: 80%;
+  color: #444;
+}
+
+/* Remove font styles for headings (H1, H2, H3) */
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* Remove specific font style for page titles (H1) */
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+/* Remove font sizes for H1, H2, and H3 */
+h1 {
+  font-size: 1.875rem;
+  margin-top: 1.875rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/* Remove border and background styles for source code */
+.source {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 1.5em;
+  word-break: break-all;
+}
+
+/* Remove border-radius and padding for callout */
+.callout {
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+/* Remove margins and avoid page breaks for figures */
+figure {
+  margin: 1.25em 0;
+  page-break-inside: avoid;
+}
+
+/* Remove opacity and font size for figure captions */
+figcaption {
+  opacity: 0.5;
+  font-size: 85%;
+  margin-top: 0.5em;
+}
+
+/* Remove background color for highlighted text */
+mark {
+  background-color: transparent;
+}
+
+/* Remove left padding for indented paragraphs */
+.indented {
+  padding-left: 1.5em;
+}
+
+/* Remove custom styling for horizontal rule (hr) */
+hr {
+  background: transparent;
+  display: block;
+  width: 100%;
+  height: 1px;
+  visibility: visible;
+  border: none;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+/* Set max-width and scaling for images on screens */
+img {
+  max-width: 100%;
+}
+
+/* Remove height restriction for images when printing */
+@media only print {
+  img {
+      max-height: 100vh;
+      object-fit: contain;
+  }
+}
+
+/* Remove page margin settings */
+@page {
+  margin: 1in;
+}
+
+/* Remove font size for collection content */
+.collection-content {
+  font-size: 0.875rem;
+}
+
+/* Remove column layout styles */
+.column-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Remove padding for columns */
+.column {
+  padding: 0 1em;
+}
+
+/* Remove font size and styling for table of contents */
+.table_of_contents-item {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  padding: 0.125rem;
+}
+
+/* Remove indentation levels for table of contents */
+.table_of_contents-indent-1 {
+  margin-left: 1.5rem;
+}
+.table_of_contents-indent-2 {
+  margin-left: 3rem;
+}
+.table_of_contents-indent-3 {
+  margin-left: 4.5rem;
+}
+
+/* Remove link styling for table of contents */
+.table_of_contents-link {
+  text-decoration: none;
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+/* Remove border and cell spacing styles for tables */
+table, th, td {
+  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-collapse: collapse;
+}
+
+/* Remove borders for the table element itself */
+table {
+  border-left: none;
+  border-right: none;
+}
+
+/* Remove font styles and alignment for table headers and cells */
+th, td {
+  font-weight: normal;
+  padding: 0.25em 0.5em;
+  line-height: 1.5;
+  min-height: 1.5em;
+  text-align: left;
+}
+
+/* Remove color style for table headers */
+th {
+  color: rgba(55, 53, 47, 0.6);
+}
+
+/* Reset list style margin for ordered and unordered lists */
+ol, ul {
+  margin: 0;
+  margin-block-start: 0.6em;
+  margin-block-end: 0.6em;
+}
+
+/* Remove list-style for unordered list items */
+ul > li {
+  list-style: disc;
+}
+
+/* Reset padding and list-style for specific list items */
+ul.to-do-list {
+  padding-inline-start: 0;
+}
+ul.to-do-list > li {
+  list-style: none;
+}
+
+/* Set text decoration and opacity for checked to-do list items */
+.to-do-children-checked {
+  text-decoration: line-through;
+  opacity: 0.375;
+}
+
+/* Reset list-style for toggle list items */
+ul.toggle > li {
+  list-style: none;
+}
+
+/* Adjust left padding for ul and ol elements */
+ul {
+  padding-inline-start: 1.7em;
+}
+
+/* Adjust left padding for li elements */
+ul > li {
+  padding-left: 0.1em;
+}
+
+ol {
+  padding-inline-start: 1.6em;
+}
+
+ol > li {
+  padding-left: 0.2em;
+}
+
+/* Adjust padding and text-indent for mono (monospace) lists */
+.mono ol {
+  padding-inline-start: 2em;
+}
+.mono ol > li {
+  text-indent: -0.4em;
+}
+
+/* Remove list-style type for toggle lists */
+.toggle {
+  padding-inline-start: 0em;
+  list-style-type: none;
+}
+
+/* Adjust padding for toggle list children (details elements) */
+.toggle > li > details {
+  padding-left: 1.7em;
+}
+
+/* Adjust margin for toggle list summary elements */
+.toggle > li > details > summary {
+  margin-left: -1.1em;
+}
+
+/* Remove background color and borders for selected values */
+.selected-value {
+  display: inline-block;
+  padding: 0 0.5em;
+  border-radius: 3px;
+  margin-right: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  white-space: nowrap;
+}
+
+/* Remove inline block and margin for collection titles */
+.collection-title {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+/* Remove margin for page descriptions */
+.page-description {
+  margin-bottom: 2em;
+}
+
+/* Remove custom styles for simple tables */
+.simple-table {
+  margin-top: 1em;
+  font-size: 0.875rem;
+  empty-cells: show;
+}
+
+/* Reset height and min-width for table data cells in simple tables */
+.simple-table td {
+  height: 29px;
+  min-width: 120px;
+}
+
+/* Reset height and min-width for table header cells in simple tables */
+.simple-table th {
+  height: 29px;
+  min-width: 120px;
+}
+
+/* Remove background and color styles for table headers in simple tables */
+.simple-table-header-color {
+  background: #fff;
+  color: black;
+}
+
+/* Remove font weight for table headers in simple tables */
+.simple-table-header {
+  font-weight: normal;
+}
+
+/* Reduce opacity for time elements */
+time {
+  opacity: 0.5;
+}
+
+/* Remove inline block, max-width, and margin for icons */
+.icon {
+  display: inline-block;
+  max-width: 1.2em;
+  max-height: 1.2em;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  margin-right: 0.5em;
+}
+
+/* Apply border-radius to user icons */
+img.icon {
+  border-radius: 3px;
+}
+
+/* Adjust width and border-radius for user icons */
+.user-icon {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+/* Set font size and border for text icons */
+.text-icon {
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* Remove max-height and cover style for page cover images */
+.page-cover-image {
+  display: block;
+  width: 100%;
+}
+
+/* Remove font size and margin for page header icons */
+.page-header-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Remove margin styles for page header icons with cover images */
+.page-header-icon-with-cover {
+  margin-top: -0.72em;
+  margin-left: 0.07em;
+}
+
+/* Apply border-radius to page header images */
+.page-header-icon img {
+  border-radius: 3px;
+}
+
+/* Remove margin and border for page links */
+.link-to-page {
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+  font-weight: 500;
+}
+
+/* Reduce opacity for user mentions in paragraphs */
+p > .user {
+  opacity: 0.5;
+}
+
+/* Set white-space style for user mentions and time elements in table cells */
+td > .user, td > time {
+  white-space: nowrap;
+}
+
+/* Adjust scale and margin for checkboxes */
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 0.6em;
+  vertical-align: middle;
+}
+
+/* Set margins for paragraphs */
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Remove borders and border-radius for images */
+.image {
+  border: none;
+  margin: 1.5em 0;
+  padding: 0;
+  border-radius: 0;
+  text-align: center;
+}
+
+/* Remove background and border-radius for code and code elements */
+.code, code {
+  background: transparent;
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  tab-size: 2;
+}
+
+/* Set code color to black and remove code color style */
+code {
+  color: #000;
+}
+
+/* Remove padding for code blocks */
+.code {
+  padding: 1.5em 1em;
+}
+
+/* Set white-space style for code blocks */
+.code-wrap {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Remove background and padding for code elements within code blocks */
+.code > code {
+  background: none;
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+}
+
+/* Remove background and border styles for blockquotes */
+blockquote {
+  font-size: 1.25em;
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 3px solid #000;
+}
+
+/* Remove text decoration, padding, and display style for bookmarks */
+.bookmark {
+  text-decoration: none;
+  max-height: 8em;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* Remove font size, overflow, and text-overflow styles for bookmark titles */
+.bookmark-title {
+  font-size: 0.85em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1.75em;
+  white-space: nowrap;
+}
+
+/* Remove color, font size, and overflow styles for bookmark descriptions */
+.bookmark-description {
+  color: rgba(55, 53, 47, 0.6);
+  font-size: 0.75em;
+  overflow: hidden;
+  max-height: 4.5em;
+  word-break: break-word;
+}
+
+/* Remove font size and margin styles for bookmark links */
+.bookmark-href {
+  font-size: 0.75em;
+  margin-top: 0.25em;
+}
+
+/* Set specific font families for sans, serif, and mono fonts */
+.sans {
+  font-family: "ui-sans-serif", "Segoe UI", "Helvetica", "Arial", sans-serif;
+}
+
+/* Remove custom font styles for code and code elements */
+.code {
+  font-family: monospace;
+}
+
+/* Set specific font families for serif fonts */
+.serif {
+  font-family: "Georgia", "ui-serif", "serif";
+}
+
+/* Set specific font families for mono fonts */
+.mono {
+  font-family: "monospace";
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+  

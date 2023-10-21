@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uróboro Local</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+</head>
+<body>
+    <article class="page mono">
+        <div id="header1"></div>
+            <!-- The header content will be loaded here -->
+        </header>
+        <header>
+            <h1 class="page-title">Uróboro Local</h1>
+            <p class="page-description">Cuentos, escritos y poemas</p>
+        </header>
+        <h1 style="text-align: center;">Uróboro Local</h1>
+        <p>Uróboro Local is a project that compiles and displays top stories from Uróboro Local in a newspaper-like format. Stay updated with the latest tech news in a format that's easy to read and enjoy.</p>
+        <div class="column-list">
+            <h2 style="text-align: center;">Recientes</h2>
+            <div class="column" style="width: 50%;">
+                <h3>Story 1: "Innovations in Tech"</h3>
+                <p><img src="image-link-1.jpg" alt="Image 1"> In a recent breakthrough, tech companies have made significant advancements in various fields. Read more about these innovations and what they mean for the future.</p>
+                <h3>Story 2: "AI and Machine Learning"</h3>
+                <p><img src="image-link-2.jpg" alt="Image 2"> Artificial Intelligence and Machine Learning are reshaping industries. Discover the latest applications and the impact they have on our daily lives.</p>
+            </div>
+            <div class="column" style="width: 50%;">
+                <h3>Story 3: "Cybersecurity Trends"</h3>
+                <p><img src="image-link-3.jpg" alt="Image 3"> With the growing reliance on digital technologies, cybersecurity is more crucial than ever. Learn about the current trends and best practices to protect your data.</p>
+                <h3>Story 4: "Emerging Technologies"</h3>
+                <p><img src="image-link-4.jpg" alt="Image 4"> Explore the latest emerging technologies that promise to revolutionize various industries.</p>
+            </div>
+        </div>
+        <h2 style="text-align: center;">Cuentos</h2>
+        <h3>Analysis 1: "The Future of Robotics"</h3>
+        <p><img src="image-link-4.jpg" alt="Image 4"> Dive deep into the world of robotics and explore the possibilities of AI-driven machines that can change the way we live and work.</p>
+        <h3>Analysis 2: "Tech Giants Unveil New Products"</h3>
+        <p><img src="image-link-5.jpg" alt="Image 5"> Discover the latest products and services from tech giants. Find out how these innovations will impact consumers and businesses.</p>
+        <h2 style="text-align: center;">Opinión</h2>
+        <h3>Op-Ed 1: "Tech Ethics in a Changing World"</h3>
+        <p><img src="image-link-6.jpg" alt="Image 6"> The ethical implications of technology are becoming increasingly important. Explore the ethical challenges faced by the tech industry.</p>
+        <h3>Op-Ed 2: "The Future of Digital Privacy"</h3>
+        <p><img src="image-link-7.jpg" alt="Image 7"> With the digital age comes concerns about privacy. This opinion piece delves into the future of digital privacy and the trade-offs we face.</p>
+        <h2 style="text-align: center;">Special Features</h2>
+        <h3>Feature 1: "Tech Spotlight: Startups to Watch"</h3>
+        <p><img src="image-link-8.jpg" alt="Image 8"> Discover the startups making waves in the tech world. Get insights into their innovations and what sets them apart.</p>
+        <h3>Feature 2: "Tech Events Calendar"</h3>
+        <p><img src="image-link-9.jpg" alt="Image 9"> Stay updated with the upcoming tech events and conferences. Plan your attendance and keep abreast of the latest industry trends.</p>
+        <hr>
+        <p>By Paper-HN Editorial Team</p>
+        <p>Paper-HN is your source for quality tech news presented in a newspaper format.</p>
+        <div id="footer"></div>
+    <script>
+        // Include the additional header
+        fetch('_includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header1').innerHTML = data;
+            });
+        // Include the footer
+        fetch('_includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

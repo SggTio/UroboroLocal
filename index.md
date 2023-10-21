@@ -17,7 +17,6 @@ Uróboro Local is a project that compiles and displays top stories from Uróboro
       ![Image 1](image-link-1.jpg)
       In a recent breakthrough, tech companies have made significant advancements in various fields. Read more about these innovations and what they mean for the future.
     </div>
-
     <div class="story">
       <h3>Story 2: "AI and Machine Learning"</h3>
       ![Image 2](image-link-2.jpg)
@@ -31,7 +30,6 @@ Uróboro Local is a project that compiles and displays top stories from Uróboro
       ![Image 3](image-link-3.jpg)
       With the growing reliance on digital technologies, cybersecurity is more crucial than ever. Learn about the current trends and best practices to protect your data.
     </div>
-
     <div class="story">
       <h3>Story 4: "Emerging Technologies"</h3>
       ![Image 4](image-link-4.jpg)

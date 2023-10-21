@@ -85,6 +85,11 @@ footer {
   margin: 15px 0;
   padding: 15px;
   border: 1px solid #ddd;
+  float: none; /* Reset the float property */
+  display: block; /* Reset the display property */
+  line-height: normal; /* Reset the line-height property */
+  position: static; /* Reset the position property */
+  z-index: auto; /* Reset the z-index property */
 }
 
   

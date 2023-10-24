@@ -1,13 +1,9 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uróboro Local - Cuentos</title>
+    <title>Uróboro Local - Otros</title>
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
     <style>
         /* Add your CSS styles here */
@@ -35,9 +31,9 @@ layout: default
 </head>
 <body>
     <article class="page mono">
-        <header>
-            <h1 class="page-title">Uróboro Local - Cuentos</h1>
-            <p class="page-description">Quiero que todas las historias sean antídoto contra el olvido</p>
+         <header>
+            <h1 class="page-title">Uróboro Local - Varios</h1>
+            <p class="page-description">Pasan las ideas más rápido de lo que logro retenerlas</p>
             <div class="header-content">
                 <div class="section-nav">
                     <ul>
@@ -49,12 +45,12 @@ layout: default
                 </div>
             </div>
         </header>
-        <h1 style="text-align: center;">Cuentos</h1>
-        <p>Sección de Fábulas y cuentos.</p>
-        <!-- Cuentos-specific content here -->
+        <h1 style="text-align: center;">Otros</h1>
+        <p>Sección de Varios.</p>   
+        <!-- Otros-specific content here -->
         <div class="posts">
             {% for post in site.posts %}
-              {% if "cuentos" in post.tags %}
+              {% if "otros" in post.tags %}
                 {% assign post_layout = "post" %}
                 {% include post.html %}
               {% endif %}

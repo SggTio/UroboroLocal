@@ -2,7 +2,7 @@ const displayRecientesByTag = (sectionId, tag) => {
     const recientesSection = document.getElementById(sectionId);
 
     // Fetch and filter posts
-    fetch('posts')
+    fetch('./posts/cuentos')
         .then((response) => response.text())
         .then((html) => {
             const parser = new DOMParser();

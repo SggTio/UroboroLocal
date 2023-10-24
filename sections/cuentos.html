@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uróboro Local - Otros</title>
+    <title>Uróboro Local - Cuentos</title>
+    <script src="./js/scripts.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
     <style>
         /* Add your CSS styles here */
@@ -31,9 +32,9 @@
 </head>
 <body>
     <article class="page mono">
-         <header>
-            <h1 class="page-title">Uróboro Local - Varios</h1>
-            <p class="page-description">Pasan las ideas más rápido de lo que logro retenerlas</p>
+        <header>
+            <h1 class="page-title">Uróboro Local - Cuentos</h1>
+            <p class="page-description">Quiero que todas las historias sean antídoto contra el olvido</p>
             <div class="header-content">
                 <div class="section-nav">
                     <ul>
@@ -45,17 +46,16 @@
                 </div>
             </div>
         </header>
-        <h1 style="text-align: center;">Otros</h1>
-        <p>Sección de Varios.</p>   
-        <!-- Otros-specific content here -->
-        <div class="posts">
-            {% for post in site.posts %}
-              {% if "otros" in post.tags %}
-                {% assign post_layout = "post" %}
-                {% include post.html %}
-              {% endif %}
-            {% endfor %}
-          </div>
+        <h1 style="text-align: center;">Cuentos</h1>
+        <p>Sección de Fábulas y cuentos.</p>
+        <!-- Cuentos-specific content here -->
+        <section class="post" id="recientes-cuentos">
+            <h2>Recientes cuentos</h2>
+        </section>
+        <script>
+            // Call the JavaScript function to display "Recientes" for all sections
+            displayRecientesByTag('recientes-cuentos', 'cuentos');
+        </script>
     </article>
     <footer>
         <p>Cuando la guerra estalle, me paro del lado de los poetas</p>

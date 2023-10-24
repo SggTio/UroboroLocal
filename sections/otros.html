@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uróboro Local - Ensayos</title>
+    <title>Uróboro Local - Otros</title>
+    <script src="./js/scripts.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
     <style>
         /* Add your CSS styles here */
@@ -31,9 +32,9 @@
 </head>
 <body>
     <article class="page mono">
-        <header>
-            <h1 class="page-title">Uróboro Local - Ensayos</h1>
-            <p class="page-description">Me consumo como una vela que se agota por gotas</p>
+         <header>
+            <h1 class="page-title">Uróboro Local - Varios</h1>
+            <p class="page-description">Pasan las ideas más rápido de lo que logro retenerlas</p>
             <div class="header-content">
                 <div class="section-nav">
                     <ul>
@@ -45,9 +46,16 @@
                 </div>
             </div>
         </header>
-        <h1 style="text-align: center;">Ensayos</h1>
-        <p>Sección de Ensayos y escritos largos.</p>
-        <!-- Ensayos-specific content here -->
+        <h1 style="text-align: center;">Otros</h1>
+        <p>Sección de Varios.</p>
+        <section class="post" id="recientes-otros">
+            <h2>Recientes Otros</h2>
+        </section>   
+        <!-- Otros-specific content here -->
+        <script>
+            // Call the JavaScript function to display "Recientes" for all sections
+            displayRecientesByTag('recientes-otros', 'otros');
+        </script>
     </article>
     <footer>
         <p>Cuando la guerra estalle, me paro del lado de los poetas</p>

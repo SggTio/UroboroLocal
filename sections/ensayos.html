@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uróboro Local - Cuentos</title>
+    <title>Uróboro Local - Ensayos</title>
+    <script src="./js/scripts.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
     <style>
         /* Add your CSS styles here */
@@ -32,8 +33,8 @@
 <body>
     <article class="page mono">
         <header>
-            <h1 class="page-title">Uróboro Local - Cuentos</h1>
-            <p class="page-description">Quiero que todas las historias sean antídoto contra el olvido</p>
+            <h1 class="page-title">Uróboro Local - Ensayos</h1>
+            <p class="page-description">Me consumo como una vela que se agota por gotas</p>
             <div class="header-content">
                 <div class="section-nav">
                     <ul>
@@ -45,17 +46,16 @@
                 </div>
             </div>
         </header>
-        <h1 style="text-align: center;">Cuentos</h1>
-        <p>Sección de Fábulas y cuentos.</p>
-        <!-- Cuentos-specific content here -->
-        <div class="posts">
-            {% for post in site.posts %}
-              {% if "cuentos" in post.tags %}
-                {% assign post_layout = "post" %}
-                {% include post.html %}
-              {% endif %}
-            {% endfor %}
-          </div>
+        <h1 style="text-align: center;">Ensayos</h1>
+        <p>Sección de Ensayos y escritos largos.</p>
+        <section class="post" id="recientes-ensayos">
+            <h2>Recientes ensayos</h2>
+        </section>
+        <!-- Ensayos-specific content here -->
+        <script>
+            // Call the JavaScript function to display "Recientes" for all sections
+            displayRecientesByTag('recientes-ensayos', 'ensayos');
+        </script>
     </article>
     <footer>
         <p>Cuando la guerra estalle, me paro del lado de los poetas</p>

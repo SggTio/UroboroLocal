@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uróboro Local</title>
+    <script src="./js/scripts.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
     <style>
         /* Add your CSS styles here */
@@ -49,6 +50,9 @@
         <p>Uróboro Local is a project that compiles and displays top stories from Uróboro Local in a newspaper-like format. Stay updated with the latest tech news in a format that's easy to read and enjoy.</p>
         <div class="column-list">
             <h2 style="text-align: center;">Recientes</h2>
+            <section class="post" id="recientes-global">
+                <h2>Recientes</h2>
+            </section>
             <div class="column" style="width: 50%;">
                 <h3>Story 1: "Innovations in Tech"</h3>
                 <p><img src="https://via.placeholder.com/450" alt="Image 1"> In a recent breakthrough, tech companies have made significant advancements in various fields. Read more about these innovations and what they mean for the future.</p>
@@ -81,6 +85,10 @@
         <p>By Paper-HN Editorial Team</p>
         <p>Paper-HN is your source for quality tech news presented in a newspaper format.</p>
         <div id="footer"></div>
+        <script>
+            // Call the JavaScript function to display "Recientes" for all sections
+            displayRecientesByTag('recientes-all', 'all');
+        </script>
 </body>
 <footer>
     <p>Cuando la guerra estalle, me paro del lado de los poetas</p>

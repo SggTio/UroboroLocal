@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uróboro Local - Poesía</title>
+    <script src="./js/scripts.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
     <style>
         /* Add your CSS styles here */
@@ -47,7 +48,14 @@
         </header>
         <h1 style="text-align: center;">Poesía</h1>
         <p>Sección de Poemas.</p>
+        <section class="post" id="recientes-poesía">
+            <h2>Recientes Poesía</h2>
+        </section>
         <!-- Poesía-specific content here -->
+        <script>
+            // Call the JavaScript function to display "Recientes" for all sections
+            displayRecientesByTag('recientes-poesia', 'poesia');
+        </script>
     </article>
     <footer>
         <p>Cuando la guerra estalle, me paro del lado de los poetas</p>

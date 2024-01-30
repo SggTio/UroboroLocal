@@ -20,10 +20,7 @@ const displayRecientesByTag = (sectionId) => {
                         const dateA = new Date(getPostDate(urlA));
                         const dateB = new Date(getPostDate(urlB));
                         return dateB - dateA;
-                    })
-            .catch((error) => {
-                console.error('Error fetching posts:', error);
-                });;
+                    });
 
                 // Display filtered posts
                 filteredPosts.forEach((url) => {

@@ -1,34 +1,39 @@
-const displayRecientesByTag = (sectionId, tag) => {
+const displayRecientesByTag = (sectionId) => {
     const recientesSection = document.getElementById(sectionId);
 
-    // Fetch and filter posts
-    fetch('./posts/cuentos')
-        .then((response) => response.text())
-        .then((html) => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const postLinks = doc.querySelectorAll('a');
+    // Array of section names
+    const sections = ['cuentos', 'poesia', 'ensayos', 'otros'];
 
-            const filteredPosts = Array.from(postLinks)
-                .map((link) => link.href)
-                .filter((url) => url.includes(-${tag}.html))
-                .sort((urlA, urlB) => {
-                    const dateA = new Date(getPostDate(urlA));
-                    const dateB = new Date(getPostDate(urlB));
-                    return dateB - dateA;
+    // Fetch and filter posts for each section
+    sections.forEach((section) => {
+        fetch(`./posts/${section}.html`)
+            .then((response) => response.text())
+            .then((html) => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const postLinks = doc.querySelectorAll('a');
+
+                const filteredPosts = Array.from(postLinks)
+                    .map((link) => link.href)
+                    .filter((url) => url.includes(`-${section}.html`))
+                    .sort((urlA, urlB) => {
+                        const dateA = new Date(getPostDate(urlA));
+                        const dateB = new Date(getPostDate(urlB));
+                        return dateB - dateA;
+                    });
+
+                // Display filtered posts
+                filteredPosts.forEach((url) => {
+                    const postContainer = document.createElement('div');
+                    postContainer.classList.add('post-container');
+                    postContainer.innerHTML = `
+                        <h3><a href="${url}">${getPostTitle(url)}</a></h3>
+                        <p>${getPostDate(url)}</p>
+                    `;
+                    recientesSection.appendChild(postContainer);
                 });
-
-            // Display filtered posts
-            filteredPosts.forEach((url) => {
-                const postContainer = document.createElement('div');
-                postContainer.classList.add('post-container');
-                postContainer.innerHTML = `
-                    <h3><a href="${url}">${getPostTitle(url)}</a></h3>
-                    <p>${getPostDate(url)}</p>
-                `;
-                recientesSection.appendChild(postContainer);
             });
-        });
+    });
 };
 
 // Function to extract post title from URL

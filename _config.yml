@@ -1,9 +1,0 @@
-title: Uróboro Local.
-description: La asincronía del papel, en bits.
-baseurl: "/UroboroLocal"
-theme: minima
-permalink: pretty
-collections:
-  posts:
-    output: true
-
